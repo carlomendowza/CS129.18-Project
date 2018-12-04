@@ -20,7 +20,7 @@ def save_to_files(num):
             f.write('{}'.format(line))
 
 def get_file_size():
-    with open(SOURCE, 'r') as f:
+    with open(SOURCE, 'r', encoding="utf-8-sig") as f:
         for i, l in enumerate(f):
             pass
         return i + 1
