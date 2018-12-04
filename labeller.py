@@ -36,7 +36,7 @@ def split_file(num):
     print('Starting at index:', start_index)
 
     # Create appropriate dataset
-    with open(SOURCE, 'r') as f:
+    with open(SOURCE, 'r', encoding='utf-8-sig') as f:
         text = f.readlines()
         for index, line in enumerate(text):
             if index < end_index and index >= start_index:
